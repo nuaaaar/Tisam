@@ -42,6 +42,7 @@ class WebsiteGreetingController extends Controller
             'from' => $request['from'],
             'to' => $request['to'],
             'body' => $request['body'],
+            'confirmed' => true,
         ]);
 
         return redirect()->back()->with('OK', 'Pesan berhasil dikirim, semoga tersampaikan :D');

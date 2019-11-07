@@ -87,11 +87,11 @@
                                             @csrf
                                             <div class="form-group">
                                                 <label for="">Dari :</label>
-                                                <input type="text" name="from" class="form-control" required>
+                                                <input type="text" name="from" class="form-control" required autocomplete="off">
                                             </div>
                                             <div class="form-group">
                                                 <label for="">Untuk :</label>
-                                                <input type="text" name="to" class="form-control">
+                                                <input type="text" name="to" class="form-control" required autocomplete="off">
                                             </div>
                                             <div class="form-group">
                                                 <label for="">Isi Pesan :</label>

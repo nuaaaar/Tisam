@@ -49,7 +49,7 @@
                             <div class="col-12">
                                 <div class="next_button">
                                     <a id="get-another-quote-button">
-                                        <button type="button" id="btn" class=" btn btn-lg rounded-0">Quote Lainnya >></button>
+                                        <button type="button" id="btn" class=" btn btn-lg rounded-0">Pesan Lainnya >></button>
                                     </a>
                                     <div class="pop"></div>
                                 </div>

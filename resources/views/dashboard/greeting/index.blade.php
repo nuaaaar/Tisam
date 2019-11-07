@@ -50,7 +50,6 @@
                         <th>Dari</th>
                         <th>Untuk</th>
                         <th>Isi Pesan</th>
-                        <th>Status</th>
                         <th width="10%">Action</th>
                     </tr>
                 </thead>
@@ -66,24 +65,11 @@
                             <td>{{ $item->body }}</td>
                         @endif
                         <td>
-                            @if ($item->confirmed == true)
-                                <p style="color: green;">Aktif</p>
-                            @endif
-                            @if ($item->confirmed == false)
-                                <p style="color: red;">Nonaktif</p>
-                            @endif
-                        </td>
-                        <td>
                             <div class="btn-group text-center">
                                 <button type="button" class="btn btn-info round dropdown-toggle" data-toggle="dropdown">
                                     <i class="la la-gear"></i>
                                 </button>
                                 <div class="dropdown-menu" x-placement="bottom-start">
-                                    @if ($item->confirmed == false)
-                                        <button class="dropdown-item btn btn-outline-info editGreetingButton" value="{{ $item->id }}">
-                                            <i class="la la-check"></i> Konfirmasi
-                                        </button>
-                                    @endif
                                     <button class="dropdown-item btn btn-outline-danger hapusGreetingButton" value="{{ $item->id }}">
                                         <i class="la la-trash"></i> Hapus
                                     </button>
